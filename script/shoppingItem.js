@@ -1,7 +1,7 @@
 /**
  * Created by caolijian on 15-2-4.
  */
-function allItems()
+function allItem()
 {
     return [
         {
@@ -62,7 +62,7 @@ function loadPromotions()
         'ITEM000005'
     ]
 }
-function items()
+function loadAllItems()
 {
     var allItems=allItem();
     var allItemStr=JSON.stringify(allItems);
