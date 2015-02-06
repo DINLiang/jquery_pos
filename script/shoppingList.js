@@ -13,7 +13,7 @@ function showClientMain()
 }
 function bindGoodsKey(allItems)
 {
-    var btnInsertCart='<button>加入购物车</button>';
+    var btnInsertCart='<button style="background-color: dodgerblue">加入购物车</button>';
     $.each(allItems,function(i)
     {
         var insertRow="<tr>"+
