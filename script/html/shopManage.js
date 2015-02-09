@@ -22,7 +22,7 @@ function backToBindAllItems(allItems)
             "<td>"+allItems[i].price+"</td>"+
             "<td>"+allItems[i].unit+"</td>"+
             "<td>"+"</td>"+allItems[i].time+"<td>"+
-            "<a target='mainFrame'href='http://localhost:63342/WebPos/detailContent.html'><button class='detailBtn'>详情</button></a>"+"<button class='deleteItem'>删除</button>"+
+            "<a href=''><button class='detailBtn'>详情</button></a>"+"<button class='deleteItem'>删除</button>"+
             "</td>"+ "</tr>";
         $("#backGoodsTab").append(new_row)
     })
