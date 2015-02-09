@@ -4,20 +4,22 @@
 <head lang="en">
     <meta charset="UTF-8">
     <script src="../jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="addProperty.js"></script>
     <script>
         addItem();
+        addPrototypeMain();
     </script>
     <title>添加属性</title>
 </head>
 <body>
 <div>
-    <table style="width: 500px;height: 300px;"  border="1" align="center" cellspacing="0">
+    <table style="width: 500px;height: 300px;" align="center" cellspacing="0">
         <tr>
             <td style="width: 600px" id="backAddTd">
                 <table id="backAddTable" cellspacing="0" align="center">
                     <tr><td>属性名:<input type="text"></td></tr>
                     <tr><td>属性值:<input type="text"></td></tr>
-                    <tr><td><input type="button" value="保存"></td>
+                    <tr><td><input id="savePrototype" type="button" value="保存"></td>
                         <td><input type="button" value="取消" onclick="location.href='addShopBackstage.html'"></td></tr>
                 </table>
             </td>
