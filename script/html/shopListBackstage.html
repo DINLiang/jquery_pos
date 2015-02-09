@@ -1,22 +1,26 @@
-
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <script src="../jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="../script/bindDbToCSL.js"></script>
+    <script type="text/javascript" src="../script/loadDb.js"></script>
+    <script type="text/javascript" src="../script/bindProToBSAD.js"></script>
+    <script type="text/javascript" src="addItem.js"></script>
+    <script type="text/javascript" src="shopManage.js"></script>
+    <script type="text/javascript" src="deleteProperty.js"></script>
     <script>
         bindAllToViewMain();
         deleteItemMain();
     </script>
-    <title>添加商品</title>
+    <title>商品管理</title>
 </head>
 <body>
 <div>
-    <p>商品信息管理</p>
-    <table id="backGoodsTab" border="1" style="width:500px;height: 300px" align="center" cellspacing="0">
-        <p><input type="button" value="添加商品" onclick="location.href='addShopBackstage.html'"></p>
+    <table id="backGoodsTab" border="1" style="width:500px;height: 300px" align="center">
+        <p>商品信息管理</p>
+        <p><input type="button" value="添加商品"  onclick="location.href='addShopBackstage.html'"</p>
         <tr>
-
             <th>序号</th><th>商品名称</th><th>商品数量</th><th>单价（元）</th><th>单位</th><th>发布时间</th><th>操作</th>
         </tr>
     </table>
