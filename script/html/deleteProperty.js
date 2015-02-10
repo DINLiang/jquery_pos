@@ -1,33 +1,26 @@
 /**
  * Created by caolijian on 15-2-9.
  */
-function deleteItemMain()
+function detailsPropertyMain()
 {
+    var propertyStr=localStorage.getItem('propertyDb');
+    var property=JSON.parse(propertyStr);
     $(document).ready(function()
     {
-        deleteItems();
-    })
+        detailsProperty(property);
+    });
 }
-function deleteItems()
+function detailsProperty(property)
 {
-    $('#backGoodsTab').find('.deleteItem').on('click',function()
+    $('.detailBtn').on('click',function()
     {
         var name=$(this).closest('tr').find('td').eq(1).text();
-        var allItemStr=localStorage.getItem('allItemsDb');
-        var allItems=JSON.parse(allItemStr);
-        var confirmDel=confirm('你确定要删除该商品？');
-        $.each(allItems,function(i)
-        {
-            if(confirmDel==true)
-            {
-                if (allItems[i].name === name)
-                {
-                    allItems.splice(i, 1);
-                }
-                allItemStr = JSON.stringify(allItems);
-                localStorage.setItem('allItemsDb', allItemStr);
-            }
-        });
-
+        console.log('soshuai');
+    });
+    $.each(property,function(i)
+    {
+        var newRow='<form>'+property[i]+'<input type="text" class="detailPro">'+'</form>';
+        $('#detailInformation').append(newRow);
+        console.log(newRow[i])
     })
 }
