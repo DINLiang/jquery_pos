@@ -7,7 +7,6 @@ function addItem()
     {
         ergodicProperty();
         clickBtnAdd();
-
     })
 }
 function ergodicProperty()
